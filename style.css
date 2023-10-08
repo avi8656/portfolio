@@ -58,9 +58,7 @@ body {
     background-color: #b9f281;
 }
 
-#main {
-    width: 100vw;
-}
+
 
 #loader {
     height: 100%;
@@ -98,15 +96,17 @@ body {
     }
 }
 
-
-#nav {
+#main {
+    width: 100vw;
+    position: relative;
+    overflow-x: hidden;
+}
+#nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 4vw;
+    padding: 4vw 5vw;
     width: 100%;
-    /* min-height: 15vh; */
-    margin-top: 10vh;
     z-index: 999;
 }
 
@@ -134,24 +134,26 @@ body {
     width: 100%;
 }
 
-#home{
+#home {
     width: 100vw;
-    padding: 0 2vmax;
-    margin-top: 7vh;
+    padding: 0 2vw;
     text-align: center;
 }
-#home h1{
-    font-size: 4vmax;
+
+#home h1 {
+    font-size: 4vw;
     font-weight: 500;
     font-family: gilroy;
-    margin-top: 20vh;
+    margin-top: 12vh;
     line-height: 60px;
 }
-#hbtn{
+
+#hbtn {
     text-align: center;
     margin-top: 10vh;
 }
-#hbtn button{
+
+#hbtn button {
     padding: 1vw 3vw;
     background-color: #FC626A;
     border-radius: 20px;
@@ -162,44 +164,54 @@ body {
     font-size: 1.5vmax;
     cursor: pointer;
 }
-.eff{
+
+.eff {
     position: absolute;
     opacity: .4;
 }
-.blueeff{
+
+.blueeff {
     top: 0%;
     right: 5%;
     width: 20vw;
 }
-.yelloweff{
+
+.yelloweff {
     top: 6%;
     left: 4%;
     width: 15vw;
 }
+
 #page1 {
     width: 100vw;
     padding: 0 2vmax;
     margin-top: 10vh;
+    z-index: 999;
 }
 
 #page1>h1 {
-    /* font: 700 7.6vmax "Gil"; */
     font-family: gilroy;
     font-weight: 700;
     font-size: 6.9vmax;
+    width: 100vw;
+    padding: 5vw;
 }
+
 .myname {
     color: #FC626A;
 }
+
 .green {
     color: #51CDE7;
     font-family: ogg;
     font-style: italic;
 }
-.btn{
+
+.btn {
     margin-top: 10vh;
     text-align: center;
 }
+
 #page2 {
     width: 100vw;
     display: flex;
@@ -229,7 +241,8 @@ body {
     border: none;
 
 }
-#page2> p {
+
+#page2>p {
     /* font: 400 1.2vmax "Gil"; */
     font-family: gilroy;
     font-weight: 400;
@@ -284,14 +297,15 @@ body {
     width: 6vmax;
 }
 
-#page3{
+#page3 {
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 5vmax 5vmax; 
+    padding: 5vmax 5vmax;
     position: relative;
 }
+
 #page3-title {
     /* font: 500 3vmax "Gil"; */
     font-family: gilroy;
@@ -302,17 +316,18 @@ body {
     align-items: center;
     margin-bottom: 1vmax;
     color: #4e4e4e;
+    padding: 2vw;
 }
 
 #page3-title>hr {
-    margin-left: 2vmax;
     width: 5vmax;
     height: 0.1vmax;
     background-color: rgb(204, 202, 202);
     border: none;
 
 }
-#page3> p {
+
+#page3>p {
     /* font: 400 1.2vmax "Gil"; */
     font-family: gilroy;
     font-weight: 500;
@@ -320,24 +335,28 @@ body {
     color: rgb(97, 96, 96);
     margin-bottom: 5vmax;
 }
+
 .glow {
     position: relative;
     position: absolute;
     opacity: .3;
 }
+
 .glowp {
-    bottom:0%;
+    bottom: 0%;
     left: 10%;
     width: 18vmax;
     z-index: 99;
 }
+
 .blueglow {
     top: -130%;
     right: 10%;
     width: 25vmax;
     z-index: 99;
 }
-.redglow{
+
+.redglow {
     top: -50%;
     right: 0;
     width: 25vmax;
@@ -356,17 +375,16 @@ body {
 #project {
     overflow-x: auto;
     display: flex;
-    gap: 100px;
+    gap: 10vw;
     width: 100%;
     min-height: 60vh;
-    padding: 0 5vw;
 }
 
 #project .slide {
     transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
     flex-shrink: 0;
     position: relative;
-    width: 50%;
+    width: 50vw;
     overflow: hidden;
     will-change: transform;
     transform: skewX(0deg);
@@ -384,38 +402,33 @@ body {
     object-fit: cover;
 }
 
-.slide img:nth-child(1) {
-    filter: grayscale();
-}
 
-s .slide img:nth-child(2) {
-    clip-path: circle(0% at 100px 100px);
-    transition: all cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-
-#page4{
+#page4 {
     width: 100vw;
-    padding: 0 2vmax;
+    padding: 0 2vw;
     text-align: center;
     margin-top: 5vh;
     position: relative;
     min-height: 75vh;
 }
-#page4 h1{
-   font-size: 6vmax;
+
+#page4 h1 {
+    font-size: 6vmax;
     font-family: gilroy;
 }
-#page4 #contact{
+
+#page4 #contact {
     margin-top: 15vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-#page4 a{
+
+#page4 a {
     text-decoration: none;
 }
-.social{
+
+.social {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -428,29 +441,34 @@ s .slide img:nth-child(2) {
     background-color: #51cee7ef;
     color: #fff;
 }
-.eff2{
+
+.eff2 {
     position: absolute;
     opacity: .4;
     width: 20vw;
 }
-.blueeff2{
+
+.blueeff2 {
     top: 0%;
-    left:0%;
+    left: 0%;
 }
-.redeff2{
+
+.redeff2 {
     bottom: 0%;
     left: 35%;
     opacity: .2;
 }
-.yelloweff2{
+
+.yelloweff2 {
     top: -10%;
     right: 5%;
 }
-#page4>h5{
-  font-size: 1.5vmax;
-  font-family: gilroy;
-  font-weight: 100;
-  margin-top: 15vh;
-  margin-bottom: 5vh;
-  opacity: 0.6;
+
+#page4>h5 {
+    font-size: 1.5vmax;
+    font-family: gilroy;
+    font-weight: 100;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+    opacity: 0.6;
 }

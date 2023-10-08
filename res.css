@@ -5,7 +5,7 @@
         width: 100vw;
     }
     #nav{
-        margin-top: 8vh;
+        margin-top: 4vh;
     }
     #nav>a{
         font-size: 3.5vw;
@@ -23,29 +23,31 @@
        top: 30%;
     }
     #hbtn{
-        margin-top: 6vh;
+        margin-top: 4vh;
         padding: 3vw 3vw;
     }
     #page1{
         width: 100vw;
         margin-top: 7vh;
+        padding: 5vw;
     }
     #page1>h1 {
-        font-size: 6.6vmax;
+        width: 80vw;
+        padding: 0 2vw;
+        font-size: 6vmax;
     }
     .btn>a>img{
         margin-top: 0;
         width: 40vw;
-        height: 8vh;
+        height: 7vh;
     }
     #page2{
         width: 100vw;
         margin-top: 5vh;
-
     }
     #box{
         display: flex;
-        gap: 3vw;
+        gap: 5vw;
     }
     #box>img{
       line-height: 5vmax;
@@ -71,16 +73,16 @@
         width: 100vw;
         min-height: 25vh;
         margin-top: 5vh;
-        margin-left: 10vw;
+        margin: 5vw;
     }
+
     #page4{
+        position: relative;
         margin-top: 7vh;
         width: 100vw;
         min-height: 40vh;
     }
-    #contact{
-        margin-top: 10vh;
-    }
+    
     .eff2{
         width: 30vw;
     }
