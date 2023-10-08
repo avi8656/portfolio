@@ -1,7 +1,7 @@
 
 function locomo(){
   const scroll = new LocomotiveScroll({
-      el: document.querySelector('#main'),
+      el: document.getElementById('main'),
       smooth: true
   });
 }
